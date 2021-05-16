@@ -215,7 +215,8 @@ def main():
         start_time = time.time()
 
         try:
-            while True:
+            for i in range(300):
+            #while True:
                 if counter % args.save_every == 0:
                     save()
 
@@ -239,6 +240,7 @@ def main():
                 counter = counter+1
                 if args.warmup_steps > 0:
                     global_step = global_step+1
+                save()
         except KeyboardInterrupt:
             print('interrupted')
             save()
