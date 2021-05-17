@@ -215,7 +215,7 @@ def main():
         start_time = time.time()
 
         try:
-            for i in range(input()):
+            for i in range(10):
             #while True:
                 if counter % args.save_every == 0:
                     save()
